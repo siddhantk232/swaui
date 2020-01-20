@@ -8,7 +8,7 @@ export default function ListItem({ dataLink }) {
 
 	useEffect(() => {
 		axios
-			.get(link)
+			.get(`https://swapi.co/api${link}`)
 			.then(response => {
 				setLoading(false);
 				setData(response.data);
