@@ -6,7 +6,7 @@ import { Logo } from './Components/UI/Logo/Logo';
 import logo from './assets/logo.png';
 import { Container } from './Components/UI/Container/Container';
 import People from './Components/People/People';
-import PersonDetails from './Components/PersonDetails/PersonDetails';
+import PersonDetailsCard from './Components/PersonDetailsCard/PersonDetailsCard';
 
 function App() {
 	return (
@@ -23,7 +23,7 @@ function App() {
 				<Container>
 					<Switch>
 						<Route path="/" exact component={People} />
-						<Route path="/person" component={PersonDetails} />
+						<Route path="/person/:id" component={PersonDetailsCard} />
 					</Switch>
 				</Container>
 			</BodyWrapper>
