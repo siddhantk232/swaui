@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-//TODO: add card for detailed person
-
 export default function HomeWorld({ onlyName, link }) {
 	const [loading, setLoading] = useState(true);
 	const [planet, setPlanet] = useState({});

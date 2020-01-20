@@ -30,22 +30,21 @@ export default function People({ history: { push } }) {
 				</thead>
 
 				<tbody>
-					{people && people.length > 0
-						? people.map(
-								({ name, homeworld, birth_year, gender, height, url }) => (
-									<Person
-										name={name}
-										homeworld={homeworld}
-										birth_year={birth_year}
-										gender={gender}
-										height={height}
-										push={push}
-										profile={url}
-										key={name}
-									/>
-								)
-						  )
-						: 'null'}
+					{people &&
+						people.map(
+							({ name, homeworld, birth_year, gender, height, url }) => (
+								<Person
+									name={name}
+									homeworld={homeworld}
+									birth_year={birth_year}
+									gender={gender}
+									height={height}
+									push={push}
+									profile={url}
+									key={name}
+								/>
+							)
+						)}
 				</tbody>
 			</Table>
 
