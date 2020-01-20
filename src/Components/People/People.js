@@ -57,7 +57,7 @@ function fetchPeople(setPeople, setLoading, currPage) {
 	setLoading(true);
 	console.log('loading');
 	axios
-		.get('/people', {
+		.get('https://swapi.co/api/people', {
 			params: {
 				page: currPage
 			}

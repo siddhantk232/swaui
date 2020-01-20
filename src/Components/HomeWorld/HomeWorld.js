@@ -6,6 +6,7 @@ export default function HomeWorld({ onlyName, link }) {
 	const [planet, setPlanet] = useState({});
 
 	useEffect(() => {
+		console.log(link);
 		axios
 			.get(link)
 			.then(response => {

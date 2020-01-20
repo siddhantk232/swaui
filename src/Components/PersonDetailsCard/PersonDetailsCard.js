@@ -16,7 +16,7 @@ export default function PersonDetailsCard({
 
 	useEffect(() => {
 		axios
-			.get(`/people/${id}`)
+			.get(`https://swapi.co/api/people/${id}`)
 			.then(response => {
 				setLoading(false);
 				setPerson(response.data);
